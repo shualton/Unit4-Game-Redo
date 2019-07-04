@@ -1,5 +1,5 @@
 body {
-	background-image: url("http://getwallpapers.com/wallpaper/full/0/5/e/951553-mario-backgrounds-1920x1080-mobile.jpg");
+    background-image: url("http://getwallpapers.com/wallpaper/full/0/5/e/951553-mario-backgrounds-1920x1080-mobile.jpg");
 }
 
 .jumbotron-jumbotron-fluid {
@@ -10,6 +10,7 @@ body {
 .buttonSection {
     background: none;
     text-align: center;
+
 }
 
 #mushroom {
@@ -30,4 +31,18 @@ body {
 #leaf {
     height: 100px;
     width: 100px;
+}
+
+h1, h2 {
+    font-family: 'Acme', sans-serif;
+	color: white!important;
+}
+
+p, h3 {
+    font-family: 'Acme', sans-serif;
+	color: red;
+}
+
+#buttons {
+    margin-left: 25%;
 }
