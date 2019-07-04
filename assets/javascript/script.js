@@ -15,5 +15,16 @@ $(document).ready(function() {
     var p3;
     var p4;
 
+    var score = 0;
+    var wins = 0;
+    var losses = 0;
+
+    function generateRand(arr) {
+        var i = arr[Math.floor(Math.random() * arr.length)];
+        randNum = i;
+        $("#randomNumber").html(randNum);
+    }
+
+    
 
 });
