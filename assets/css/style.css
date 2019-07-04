@@ -1,0 +1,33 @@
+body {
+	background-image: url("http://getwallpapers.com/wallpaper/full/0/5/e/951553-mario-backgrounds-1920x1080-mobile.jpg");
+}
+
+.jumbotron-jumbotron-fluid {
+    background-image: url("https://carbonmutt.files.wordpress.com/2012/06/mario-pipe-skin.jpg");
+    margin: 30px;
+}
+
+.buttonSection {
+    background: none;
+    text-align: center;
+}
+
+#mushroom {
+    height: 100px;
+    width: 100px;
+}
+
+#star {
+    height: 100px;
+    width: 100px;
+}
+
+#flower {
+    height: 100px;
+    width: 100px;
+}
+
+#leaf {
+    height: 100px;
+    width: 100px;
+}
