@@ -75,4 +75,20 @@ $(document).ready(function() {
         score += p4;
         $("#totalNumber").html(totalScore);
     });
+
+    $("button").on("click", function() {
+		if (score == random) {
+			wins++;
+			console.log(score);
+			$("#totalNumber").html(score);
+			$("#wins").html("Wins: " + wins);
+
+			reset();
+		} else if (score > random){
+			losses++;
+			$("#totalNumber").html(score);
+			$("#losses").html("Losses: " + losses);
+			reset();
+		}
+	});
 });
