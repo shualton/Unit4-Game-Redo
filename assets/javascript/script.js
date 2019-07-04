@@ -8,6 +8,11 @@ $(document).ready(function() {
         powerup.push(p);
     }
 
+    var score = 0;
+    var wins = 0;
+    var losses = 0;
+
+
     var randNum;
     var powerNum = [];
     var p1;
@@ -15,21 +20,18 @@ $(document).ready(function() {
     var p3;
     var p4;
 
-    var score = 0;
-    var wins = 0;
-    var losses = 0;
-
-    function generateRand(arr) {
-        var i = arr[Math.floor(Math.random() * arr.length)];
-        randNum = i;
-        $("#randomNumber").html(randNum);
-    }
-
+   
     function generatePowerup(arr) {
         for (var j = 0; j < 4; y++) {
             var a = arr[Math.floor(Math.random() * arr.length)];
             powerNum.push(a);
         }
+    }
+
+    function generateRand(arr) {
+        var i = arr[Math.floor(Math.random() * arr.length)];
+        randNum = i;
+        $("#randomNumber").html(randNum);
     }
 
     function powerupValue(arr) {
@@ -42,4 +44,13 @@ $(document).ready(function() {
         p4 = arr[3];
     }
 
+    function reset(x) {
+        powerNum = [];
+        generateRand(random);
+        generatePowerup(powerup);
+        powerupValue(powerNum);
+        score = 0;
+        $("#totalNumber").html(score);
+
+    }
 });
