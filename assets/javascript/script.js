@@ -32,4 +32,14 @@ $(document).ready(function() {
         }
     }
 
+    function powerupValue(arr) {
+        for(var p = 0; p < arr.length; p++) {
+            $("#button-" + (i+1)).attr("value", arr[p]);
+        }
+        p1 = arr[0];
+		p2 = arr[1];
+		p3 = arr[2];
+        p4 = arr[3];
+    }
+
 });
