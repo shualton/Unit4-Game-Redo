@@ -65,34 +65,75 @@ $(document).ready(function() {
     $("#button-1").on("click", function() {
         score += p1;
         $("#totalNumber").html(score);
-    });
-    $("#button-2").on("click", function() {
-        score += p2;
-        $("#totalNumber").html(score);
-    });
-    $("#button-3").on("click", function() {
-        score += p3;
-        $("#totalNumber").html(score);
-    });
-    $("#button-4").on("click", function() {
-
-        score += p4;
-        $("#totalNumber").html(score);
-    });
-
-    $("button").on("click", function() {
-		if (score == random) {
+        if (score === random) {
 			wins++;
-			console.log(score);
+			console.log("won");
 			$("#totalNumber").html(score);
 			$("#wins").html("Wins: " + wins);
 
 			reset();
 		} else if (score > random){
-			losses++;
+            losses++;
+            console.log("loss");
 			$("#totalNumber").html(score);
 			$("#losses").html("Losses: " + losses);
 			reset();
 		}
-	});
+    });
+    $("#button-2").on("click", function() {
+        score += p2;
+        $("#totalNumber").html(score);
+        if (score === random) {
+			wins++;
+			console.log("won");
+			$("#totalNumber").html(score);
+			$("#wins").html("Wins: " + wins);
+
+			reset();
+		} else if (score > random){
+            losses++;
+            console.log("loss");
+			$("#totalNumber").html(score);
+			$("#losses").html("Losses: " + losses);
+			reset();
+		}
+    });
+    $("#button-3").on("click", function() {
+        score += p3;
+        $("#totalNumber").html(score);
+        if (score === random) {
+			wins++;
+			console.log("won");
+			$("#totalNumber").html(score);
+			$("#wins").html("Wins: " + wins);
+
+			reset();
+		} else if (score > random){
+            losses++;
+            console.log("loss");
+			$("#totalNumber").html(score);
+			$("#losses").html("Losses: " + losses);
+			reset();
+		}
+    });
+    $("#button-4").on("click", function() {
+
+        score += p4;
+        $("#totalNumber").html(score);
+        if (score === random) {
+			wins++;
+			console.log("won");
+			$("#totalNumber").html(score);
+			$("#wins").html("Wins: " + wins);
+
+			reset();
+		} else if (score > random){
+            losses++;
+            console.log("loss");
+			$("#totalNumber").html(score);
+			$("#losses").html("Losses: " + losses);
+			reset();
+		}
+    });
+
 });
