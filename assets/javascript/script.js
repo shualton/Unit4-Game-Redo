@@ -22,7 +22,7 @@ $(document).ready(function() {
 
    
     function generatePowerup(arr) {
-        for (var j = 0; j < 4; y++) {
+        for (var j = 0; j < 4; j++) {
             var a = arr[Math.floor(Math.random() * arr.length)];
             powerNum.push(a);
         }
@@ -36,12 +36,16 @@ $(document).ready(function() {
 
     function powerupValue(arr) {
         for(var p = 0; p < arr.length; p++) {
-            $("#button-" + (i+1)).attr("value", arr[p]);
+            $("#button-" + (p+1)).attr("value", arr[p]);
         }
         p1 = arr[0];
-		p2 = arr[1];
-		p3 = arr[2];
+        console.log("p1", p1);
+        p2 = arr[1];
+        console.log("p2", p2);
+        p3 = arr[2];
+        console.log("p3", p3);
         p4 = arr[3];
+        console.log("p4", p4);
     }
 
     function reset(x) {
@@ -60,20 +64,20 @@ $(document).ready(function() {
 
     $("#button-1").on("click", function() {
         score += p1;
-        $("#totalNumber").html(totalScore);
+        $("#totalNumber").html(score);
     });
     $("#button-2").on("click", function() {
         score += p2;
-        $("#totalNumber").html(totalScore);
+        $("#totalNumber").html(score);
     });
     $("#button-3").on("click", function() {
         score += p3;
-        $("#totalNumber").html(totalScore);
+        $("#totalNumber").html(score);
     });
     $("#button-4").on("click", function() {
 
         score += p4;
-        $("#totalNumber").html(totalScore);
+        $("#totalNumber").html(score);
     });
 
     $("button").on("click", function() {
