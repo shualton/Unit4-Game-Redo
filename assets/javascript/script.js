@@ -25,6 +25,11 @@ $(document).ready(function() {
         $("#randomNumber").html(randNum);
     }
 
-    
+    function generatePowerup(arr) {
+        for (var j = 0; j < 4; y++) {
+            var a = arr[Math.floor(Math.random() * arr.length)];
+            powerNum.push(a);
+        }
+    }
 
 });
