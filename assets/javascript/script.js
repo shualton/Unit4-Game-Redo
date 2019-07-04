@@ -53,4 +53,26 @@ $(document).ready(function() {
         $("#totalNumber").html(score);
 
     }
+
+    generateRand(random);
+    generatePowerup(powerup);
+    powerupValue(powerNum);
+
+    $("#button-1").on("click", function() {
+        score += p1;
+        $("#totalNumber").html(totalScore);
+    });
+    $("#button-2").on("click", function() {
+        score += p2;
+        $("#totalNumber").html(totalScore);
+    });
+    $("#button-3").on("click", function() {
+        score += p3;
+        $("#totalNumber").html(totalScore);
+    });
+    $("#button-4").on("click", function() {
+
+        score += p4;
+        $("#totalNumber").html(totalScore);
+    });
 });
